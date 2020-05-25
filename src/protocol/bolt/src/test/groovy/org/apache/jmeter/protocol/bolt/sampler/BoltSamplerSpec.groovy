@@ -21,12 +21,12 @@ import org.apache.jmeter.protocol.bolt.config.BoltConnectionElement
 import org.apache.jmeter.samplers.Entry
 import org.apache.jmeter.threads.JMeterContextService
 import org.apache.jmeter.threads.JMeterVariables
-import org.neo4j.driver.v1.Driver
-import org.neo4j.driver.v1.Session
-import org.neo4j.driver.v1.StatementResult
-import org.neo4j.driver.v1.exceptions.ClientException
-import org.neo4j.driver.v1.summary.ResultSummary
-import org.neo4j.driver.v1.summary.SummaryCounters
+import org.neo4j.driver.Driver
+import org.neo4j.driver.Result
+import org.neo4j.driver.Session
+import org.neo4j.driver.exceptions.ClientException
+import org.neo4j.driver.summary.ResultSummary
+import org.neo4j.driver.summary.SummaryCounters
 
 import spock.lang.Specification
 
