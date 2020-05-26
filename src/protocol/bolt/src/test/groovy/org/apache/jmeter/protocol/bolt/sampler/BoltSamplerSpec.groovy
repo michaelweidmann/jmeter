@@ -112,9 +112,9 @@ class BoltSamplerSpec extends Specification {
     }
 
     def getEmptyQueryResult() {
-        def queryResult = Mock(StatementResult)
+        def queryResult = Mock(Result)
         def summary = Mock(ResultSummary)
-        queryResult.summary() >> summary
+        queryResult.consume() >> summary
         SummaryCounters counters = Mock(SummaryCounters)
         summary.counters() >> counters
         return queryResult
